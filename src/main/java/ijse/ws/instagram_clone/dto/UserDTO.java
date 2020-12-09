@@ -2,36 +2,35 @@ package ijse.ws.instagram_clone.dto;
 
 public class UserDTO {
 
-    private String user_id;
-    private String user_name;
+    private String name;
+    private String username;
     private String password;
-    private String email;
+    private String pro_pic;
 
     public UserDTO() {
-
     }
 
-    public UserDTO(String user_id, String user_name, String password, String email) {
-        this.user_id = user_id;
-        this.user_name = user_name;
+    public UserDTO(String name, String username, String password, String pro_pic) {
+        this.name = name;
+        this.username = username;
         this.password = password;
-        this.email = email;
+        this.pro_pic = pro_pic;
     }
 
-    public String getUser_id() {
-        return user_id;
+    public String getName() {
+        return name;
     }
 
-    public void setUser_id(String user_id) {
-        this.user_id = user_id;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getUser_name() {
-        return user_name;
+    public String getUsername() {
+        return username;
     }
 
-    public void setUser_name(String user_name) {
-        this.user_name = user_name;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getPassword() {
@@ -42,11 +41,21 @@ public class UserDTO {
         this.password = password;
     }
 
-    public String getEmail() {
-        return email;
+    public String getPro_pic() {
+        return pro_pic;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setPro_pic(String pro_pic) {
+        this.pro_pic = pro_pic;
+    }
+
+    @Override
+    public String toString() {
+        return "UserDTO{" +
+                "name='" + name + '\'' +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", pro_pic='" + pro_pic + '\'' +
+                '}';
     }
 }
